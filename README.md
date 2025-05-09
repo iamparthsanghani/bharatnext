@@ -54,6 +54,12 @@ We used the **Flutter Bloc** package to implement reactive state management and 
 - ❗ Initial Hive model generation requires manual `build_runner` command
 - ❗ Localization is configured but only one language is implemented (English)
 
-## Screenshots (Optional)
+## Screenshots 
 
-_Add screenshots of Home, Detail, and Favorites screens here._
+
+### Home Screen
+![Home Screen](assets/screenshots/home_screen.png)
+
+### Article Detail
+![Detail Screen](assets/screenshots/detail_screen.png)
+

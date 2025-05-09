@@ -1,6 +1,7 @@
 import 'package:bharatnxrassignmentnext/blocs/articles/article_bloc.dart';
 import 'package:bharatnxrassignmentnext/blocs/articles/article_event.dart';
 import 'package:bharatnxrassignmentnext/blocs/articles/article_state.dart';
+import 'package:bharatnxrassignmentnext/screens/favorites_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../widgets/article_card.dart';
@@ -14,7 +15,22 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Articles')),
+      appBar: AppBar(
+        title: Text('Articles'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => FavoritesScreen(),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
       body: Column(
         children: [
           Padding(

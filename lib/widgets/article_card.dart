@@ -18,33 +18,33 @@ class ArticleCard extends StatelessWidget {
       elevation: 3,
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       child: ListTile(
-        title: Text(article.title),
-        subtitle: Text(
-          article.body.length > 50 ? '${article.body.substring(0, 50)}...' : article.body,
-        ),
-        onTap: onTap,
-        trailing: ValueListenableBuilder(
-          valueListenable: favoritesBox.listenable(),
-          builder: (context, Box box, _) {
-            final isFavorite = box.containsKey(article.id);
+          title: Text(article.title),
+          subtitle: Text(
+            article.body.length > 50
+                ? '${article.body.substring(0, 50)}...'
+                : article.body,
+          ),
+          onTap: onTap,
+          trailing: ValueListenableBuilder(
+            valueListenable: favoritesBox.listenable(),
+            builder: (context, Box box, _) {
+              final isFavorite = box.containsKey(article.id);
 
-            return IconButton(
-              icon: Icon(
-                isFavorite ? Icons.favorite : Icons.favorite_border,
-                color: isFavorite ? Colors.red : null,
-              ),
-              onPressed: () {
-                if (isFavorite) {
-                  box.delete(article.id);
-                } else {
-                  box.put(article.id, article);
-                }
-              },
-            );
-          },
-        )
-
-      ),
+              return IconButton(
+                icon: Icon(
+                  isFavorite ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite ? Colors.red : null,
+                ),
+                onPressed: () {
+                  if (isFavorite) {
+                    box.delete(article.id);
+                  } else {
+                    box.put(article.id, article);
+                  }
+                },
+              );
+            },
+          )),
     );
   }
 }
