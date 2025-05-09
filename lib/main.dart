@@ -1,12 +1,10 @@
 import 'package:bharatnxrassignmentnext/blocs/articles/article_bloc.dart';
 import 'package:bharatnxrassignmentnext/blocs/articles/article_event.dart';
 import 'package:bharatnxrassignmentnext/data/models/article_model.dart';
-import 'package:bharatnxrassignmentnext/screens/article_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'data/repositories/article_repository.dart';
-import 'screens/favorites_screen.dart';
 import 'screens/home_screen.dart';
 import 'utils/localization.dart';
 
@@ -20,6 +18,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return RepositoryProvider(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import '../data/models/article_model.dart';
-import 'package:hive/hive.dart';
 
 class ArticleCard extends StatelessWidget {
   final ArticleModel article;
@@ -12,7 +11,6 @@ class ArticleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final favoritesBox = Hive.box('favorites');
-    final isFavorite = favoritesBox.containsKey(article.id);
 
     return Card(
       elevation: 3,
