@@ -58,7 +58,7 @@ We used the **Flutter Bloc** package to implement reactive state management and 
 
 
 ### Home Screen
-![Home Screen](assets/screenshots/home_screen.png)
+![Home Screen](assets/screenshots/home_screen.png) ![Detail Screen](assets/screenshots/detail_screen.png) ![Favorite Screen](assets/screenshots/favorites_screen.png)
 
 ### Article Detail
 ![Detail Screen](assets/screenshots/detail_screen.png)
