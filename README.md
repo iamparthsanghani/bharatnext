@@ -57,9 +57,9 @@ We used the **Flutter Bloc** package to implement reactive state management and 
 ## Screenshots 
 
 
-### Home Screen
-![Home Screen](assets/screenshots/home_screen.png) ![Detail Screen](assets/screenshots/detail_screen.png) ![Favorite Screen](assets/screenshots/favorites_screen.png)
-
-### Article Detail
-![Detail Screen](assets/screenshots/detail_screen.png)
+<p align="center">
+  <img src="screenshots/home_screen.png" width="30%" />
+  <img src="screenshots/detail_screen.png" width="30%" />
+  <img src="screenshots/favorites_screen.png" width="30%" />
+</p>
 
