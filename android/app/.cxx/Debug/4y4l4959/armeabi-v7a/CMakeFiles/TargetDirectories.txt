@@ -1,0 +1,2 @@
+/Users/parth/Documents/parthWorkPersonal/bharatnxrassignmentnext/android/app/.cxx/Debug/4y4l4959/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/parth/Documents/parthWorkPersonal/bharatnxrassignmentnext/android/app/.cxx/Debug/4y4l4959/armeabi-v7a/CMakeFiles/rebuild_cache.dir
